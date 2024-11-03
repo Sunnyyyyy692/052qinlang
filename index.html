@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yijihezi{
+            width: 700px;
+            height: 200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .yijiliebiao{
+            padding: 0;
+            position: fixed;
+            top: 100px;
+        }
+        .yijiliebiao>li{
+            list-style: none;
+            margin: 10px 0px;
+            width: 90px;
+            height: 40px;
+            background-color: #f2e6ce;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .yijiliebiao>li>a{
+            color: #6e8b74;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .erjihezi1, .erjihezi2, .erjihezi3{
+            position: absolute;
+            left: 100px;
+            width: 200px; 
+            height: 40px;
+            border-radius: 5px;
+            display: none; 
+            background-color: #6e8b74;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center; 
+        }
+        .erjiliebiao1, .erjiliebiao2, .erjiliebiao3{
+            padding: 0px;
+            display: flex;
+        }
+        .erjiliebiao1>li, .erjiliebiao2>li, .erjiliebiao3>li{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            list-style: none;
+            margin: 0 10px;
+        }
+        .erjiliebiao1>li>a, .erjiliebiao2>li>a, .erjiliebiao3>li>a{
+            color: #f2e6ce;
+        }
+        .yijiliebiao>li:hover>.erjihezi1,
+        .yijiliebiao>li:hover>.erjihezi2,
+        .yijiliebiao>li:hover>.erjihezi3{
+            display: flex; 
+        }
+    </style>
+</head>
+<body>
+    <div class="yijihezi">
+        <ul class="yijiliebiao">
+            <li>
+                <a href="#">体育</a>
+                <div class="erjihezi2">
+                    <ul class="erjiliebiao2">
+                        <li><a href="#">NBA</a></li>
+                        <li><a href="#">CBA</a></li>
+                        <li><a href="#">英超</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">科技</a>
+                <div class="erjihezi1">
+                    <ul class="erjiliebiao1">
+                        <li><a href="#">数码</a></li>
+                        <li><a href="#">手机</a></li>
+                        <li><a href="#">电脑</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">美食</a>
+                <div class="erjihezi3">
+                    <ul class="erjiliebiao3">
+                        <li><a href="#">中式</a></li>
+                        <li><a href="#">西式</a></li>
+                        <li><a href="#">泰式</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
